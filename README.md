@@ -1,7 +1,7 @@
 # random_game_patches
 Random patches / utils I use to fix quirks in games I play.
 
-Note that while I'll explain what each does, whether it "Just Works:tm:" after compiling and installing is up for debate. These use hardcoded memory addresses, which may not be the same on your system. If the respective game has an update, hardcoded addresses can (and probably will) break.
+Note that while I'll explain what each does, whether it Just Works™ after compiling and installing is up for debate. These use hardcoded memory addresses, which may not be the same on your system. If the respective game has an update, hardcoded addresses can (and probably will) break.
 
 I offer no guarantee of portability. Do your research before blindly applying, and by that I mean use a decompiler and verify what's going on makes sense.
 
