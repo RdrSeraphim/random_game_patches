@@ -18,5 +18,5 @@ I have the Makefile set to use `clang`. `gcc` will work just fine, just edit the
 #### Gamepad Lobotomizer
 
 **Working?** Yes, as of 20260524.   
-**Why?** Despite no real controller being plugged in, my Keychron K2 HE keyboard reports an input device with joystick events (prolly because hall effect switches). Instead of manually `chmod`'ing the specific device to `000`, this makes `cinput_manager_core::gamepad_mode(void)` return `0` to ensure that whatever calls it understands "nope, no gamepad here, boss." I did attempt to have `cinput_manager_core::gamepad_connected(void)` do this, but it appears that the function doesn't get called sufficiently to do the trick.
+**Why?** Despite no real controller being plugged in, my Keychron K2 HE keyboard reports an input device with joystick events (prolly because hall effect switches). Unlike every other game I've played with this keyboard, this game insists that I must have an Xbox controller. Instead of manually `chmod`'ing the specific device to `000`, this makes `cinput_manager_core::gamepad_mode(void)` return `0` to ensure that whatever calls it understands "nope, no gamepad here, boss." I did attempt to have `cinput_manager_core::gamepad_connected(void)` do this, but it appears that the function doesn't get called sufficiently to do the trick.
 
